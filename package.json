@@ -1,0 +1,24 @@
+{
+  "name": "gaoter-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "gao": "./bin/gao",
+    "gaoter": "./bin/gao"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gao-ji-kai/gaoter-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gao-ji-kai/gaoter-cli/issues"
+  },
+  "homepage": "https://github.com/gao-ji-kai/gaoter-cli#readme"
+}

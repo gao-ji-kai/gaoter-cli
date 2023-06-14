@@ -1,0 +1,4 @@
+#! /user/bin/env node  用node环境去执行
+
+
+console.log('gaoter-cli')  //npm link 会自动产生执行命令
