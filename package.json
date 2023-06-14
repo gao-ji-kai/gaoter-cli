@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/gao-ji-kai/gaoter-cli/issues"
   },
-  "homepage": "https://github.com/gao-ji-kai/gaoter-cli#readme"
+  "homepage": "https://github.com/gao-ji-kai/gaoter-cli#readme",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^10.0.1",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^9.2.7"
+  }
 }
