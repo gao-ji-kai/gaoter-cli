@@ -1,4 +1,4 @@
-#! /user/bin/env node  用node环境去执行
+#! /usr/bin/env node  用node环境去执行
 
 
 console.log('gaoter-cli')  //npm link 会自动产生执行命令
@@ -61,6 +61,7 @@ program
 
 //  -v 
 program
+    .name('gaoter-cli')
     .version(`gaoter-cli@${require('../package.json').version}`)
     .usage(`<command>[options]`)
 
@@ -81,7 +82,7 @@ program.parse(process.argv)
 // 2.要实现脚手架  先做一个命令行交互的功能  inquirer
 
 
-// 3.将模板下载下来  git-repo
+// 3.将模板下载下来  download-git-repo
 
 
 
