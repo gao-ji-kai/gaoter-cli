@@ -12,16 +12,16 @@ const figlet = require('figlet')
 
 //核心功能  1.创建项目   2.更改配置文件  3.UI界面 @vue/ui
 
-const clearArgs = (cmd) => {//{force:true}
-    const args = {};
-    cmd.options.forEach(item => {
-        const key = item.long.slice(2)
-        if (cmd[key]) args[key] = item[key]
-    })
+// const clearArgs = (cmd) => {//{force:true}
+//     const args = {};
+//     cmd.options.forEach(item => {
+//         const key = item.long.slice(2)
+//         if (cmd[key]) args[key] = item[key]
+//     })
 
-    return args
+//     return args
 
-}
+// }
 //  万一重名  强制创建的模式
 program
     .command('create <app-name>')
@@ -29,8 +29,8 @@ program
     .option('-f,--force', 'overwrite target directory if it exists')
     .action((name, cmd) => {
         // 调用create模块实现
-        require('../lib/create.js')(name, clearArgs(cmd))
-        console.log(name, clearArgs(cmd));//需要提取cmd中的属性
+        require('../lib/create.js')(name, cmd)
+        console.log(name, cmd, '111111');//需要提取cmd中的属性
     })
 
 
@@ -44,7 +44,7 @@ program
     .action((value, cmd) => {
         //config模块实现
 
-        console.log(value, clearArgs(cmd));
+        console.log(value, cmd);
     })
 
 //UI界面
@@ -56,7 +56,7 @@ program
 
         // 调用 UI模块实现
 
-        console.log(clearArgs(cmd));
+        // console.log(clearArgs(cmd));
     })
 
 //  -v 
